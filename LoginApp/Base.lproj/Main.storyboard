@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -83,7 +85,7 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="9Il-gC-Ft9"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqG-cS-zsV" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqG-cS-zsV" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="436" width="367" height="40"/>
                                         <color key="backgroundColor" red="0.95977622269999996" green="0.60461777449999998" blue="0.67205709219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -113,7 +115,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="101" translatesAutoresizingMaskIntoConstraints="NO" id="2th-re-Qz0">
                                         <rect key="frame" x="0.0" y="517" width="367" height="45"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4c-4j-XjQ" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4c-4j-XjQ" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="133" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="FQz-Oe-yhV"/>
@@ -127,7 +129,7 @@
                                                     <action selector="forgotUserButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phV-rL-Ide"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwO-9S-ye5" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwO-9S-ye5" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
                                                 <rect key="frame" x="234" y="0.0" width="133" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="Itx-jK-Der"/>
@@ -149,13 +151,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="64r-kJ-NNP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="1Zj-Mf-J19"/>
                             <constraint firstItem="8SC-BI-6nM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="6pV-kj-yYh"/>
                             <constraint firstItem="64r-kJ-NNP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AUg-ua-8UZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="fqo-Sp-f22" id="yYo-Yb-Zxy"/>
@@ -174,7 +176,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDL-1b-ZK7" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDL-1b-ZK7" customClass="DesignButton" customModule="LoginApp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="66" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.91338992119999995" green="0.50232768059999999" blue="0.55643463130000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -208,7 +210,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="NHn-Vr-nxc">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="84.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-ZL-qEb">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-ZL-qEb">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="84.5"/>
                                                         <color key="tintColor" red="1" green="0.76099741060000003" blue="0.063621836469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
@@ -225,14 +227,14 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3Lp-Pj-nGr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qDL-1b-ZK7" firstAttribute="top" secondItem="3Lp-Pj-nGr" secondAttribute="top" constant="22" id="E3n-1y-RYG"/>
                             <constraint firstItem="SPR-pG-RgN" firstAttribute="centerY" secondItem="3Lp-Pj-nGr" secondAttribute="centerY" id="Ni2-wf-93T"/>
                             <constraint firstItem="SPR-pG-RgN" firstAttribute="centerX" secondItem="3Lp-Pj-nGr" secondAttribute="centerX" id="Zna-05-KXZ"/>
                             <constraint firstItem="qDL-1b-ZK7" firstAttribute="leading" secondItem="3Lp-Pj-nGr" secondAttribute="leading" constant="20" id="qoR-GL-ZBU"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3Lp-Pj-nGr"/>
                     </view>
                     <connections>
                         <outlet property="welcomeLabel" destination="WZS-ZL-qEb" id="Mme-qW-mvZ"/>
@@ -243,9 +245,32 @@
             <point key="canvasLocation" x="-264" y="-1304"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="BwO-9S-ye5">
+            <size key="intrinsicContentSize" width="123" height="34"/>
+        </designable>
+        <designable name="b4c-4j-XjQ">
+            <size key="intrinsicContentSize" width="90" height="34"/>
+        </designable>
+        <designable name="bzo-dG-Pm8">
+            <size key="intrinsicContentSize" width="114.5" height="27"/>
+        </designable>
+        <designable name="fqo-Sp-f22">
+            <size key="intrinsicContentSize" width="116" height="26"/>
+        </designable>
+        <designable name="nqG-cS-zsV">
+            <size key="intrinsicContentSize" width="64" height="50"/>
+        </designable>
+        <designable name="qDL-1b-ZK7">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+    </designables>
     <resources>
         <image name="checkmark.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="premie" width="300" height="263"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
